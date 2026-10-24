@@ -30,3 +30,5 @@ The demonstration videos are scripted recordings of the actual apps. Air Orchest
 Public deployment and clean-checkout verification are recorded after publication. No employer or hiring outcome is implied by these checks.
 
 Clean-checkout verification: a fresh local Git clone passed `npm ci`, type checking, unit checks, production build with the repository base path, and the full Chromium/WebKit browser suite. The base-path preview exercised real interactions and bundled model assets with no page errors, HTTP failures, or external application requests. See `production-path-check.json`.
+
+Linux CI: the MediaPipe worker image-inference check is explicitly skipped in Linux WebKit, whose worker lacks the GL context required by the library’s image conversion (even with a CPU delegate). All other WebKit checks run. The identical inference check passed in macOS WebKit and Chromium; live camera tracking was user-confirmed in desktop Chrome. This does not establish camera support in Linux WebKit.

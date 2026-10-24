@@ -25,3 +25,5 @@ Automated Chromium/WebKit checks, native Safari control checks, and user-reporte
 Record a phrase, invite your former self, and play a duet across two moments.
 
 Implemented the interaction described in the README, updated the visual identity, and added a browser regression for the new behavior. The two additional portfolio projects were explicitly requested by the user.
+
+First public CI found Linux WebKit’s missing worker GL context. Kept real inference coverage on Chromium and local macOS WebKit, explicitly excluded only that incompatible Linux/WebKit test, and retained all WebKit interface checks.

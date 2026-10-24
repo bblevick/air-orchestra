@@ -9,7 +9,7 @@ For a local deployment-path check:
 
 ```sh
 BASE_PATH=/air-orchestra/ npm run build
-npm run preview
+BASE_PATH=/air-orchestra/ npm run preview
 ```
 
 Open the printed preview origin followed by `/air-orchestra/`. Repositories contain original public portfolio code and redistributable assets. Keep environment files, credentials, raw test captures, and build output out of Git.
