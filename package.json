@@ -1,0 +1,32 @@
+{
+  "name": "air-orchestra",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "assets:prepare": "node scripts/prepare-assets.mjs",
+    "predev": "npm run assets:prepare",
+    "prebuild": "npm run assets:prepare",
+    "demo:capture": "node scripts/capture-demo.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.32"
+  }
+}

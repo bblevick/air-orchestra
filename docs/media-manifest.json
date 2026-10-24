@@ -1,0 +1,36 @@
+[
+  {
+    "file": "docs/media/instrument.png",
+    "bytes": 401690
+  },
+  {
+    "file": "docs/media/mobile.png",
+    "bytes": 198166
+  },
+  {
+    "file": "docs/media/overview.png",
+    "bytes": 420970
+  },
+  {
+    "file": "docs/media/demo.mp4",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1280,
+        "height": 900,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "1500"
+      },
+      {
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "nb_frames": "1078"
+      }
+    ],
+    "format": {
+      "duration": "50.000000"
+    }
+  }
+]
