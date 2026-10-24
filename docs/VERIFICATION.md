@@ -28,3 +28,5 @@ The demonstration videos are scripted recordings of the actual apps. Air Orchest
 ## Release verification
 
 Public deployment and clean-checkout verification are recorded after publication. No employer or hiring outcome is implied by these checks.
+
+Clean-checkout verification: a fresh local Git clone passed `npm ci`, type checking, unit checks, production build with the repository base path, and the full Chromium/WebKit browser suite. The base-path preview exercised real interactions and bundled model assets with no page errors, HTTP failures, or external application requests. See `production-path-check.json`.
