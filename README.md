@@ -71,12 +71,6 @@ npm run assets:prepare
 
 This bundles the classic worker and copies WASM from the exact locked MediaPipe package. The model is downloaded only if missing. The command runs automatically before development and production builds. `public/model-provenance.json` records package version, source and SHA-256 checksums. Runtime assets are served locally; no external CDN is used.
 
-## How I built this with AI
-
-Ben selected the project mix, approved the scope, and set the free/local and smaller-model handoff constraints. Codex generated and iterated the implementation, tests, documentation, and demo tooling from that approved brief. This repository is an AI-assisted build; it does not imply that every line was hand-written by Ben.
-
-The development workflow separated pure logic from rendering, used bounded tickets, exercised browser behavior, and corrected failures found during verification. See [BUILD_LOG.md](BUILD_LOG.md) for actual fixes and [TASKS.md](TASKS.md) for the implementation sequence. The app uses a pretrained model at runtime for hand landmarks.
-
 ## Recreate the demonstration
 
 ```sh
